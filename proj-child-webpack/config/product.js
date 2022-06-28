@@ -1,20 +1,3 @@
-/*
- * @Author: peiyanh
- * @Date: 2022-01-18 11:37:47
- * @LastEditTime: 2022-06-17 15:40:46
- * @LastEditors: peiyanh
- * @Description:
- * @FilePath: /ar-react-cli/template/antd-react-router/config/product.js
- * Copyright (c) 2004-2021 i-Sprint Technologies, Inc.
- *  address:
- *  All rights reserved.
- *
- *  This software is the confidential and proprietary information of
- *  i-Sprint Technologies, Inc. ('Confidential Information').  You shall not
- *  disclose such Confidential Information and shall use it only in
- *  accordance with the terms of the license agreement you entered into
- *  with i-Sprint.
- */
 
 const Webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
@@ -22,9 +5,7 @@ const webpackBaseConfig = require('./webpack.config.base');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-// const proxy = require('./proxy')
 
-// const TerserPlugin = require('terser-webpack-plugin');
 
 const compiler = Webpack({
 	...webpackBaseConfig,

@@ -1,0 +1,35 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+
+  <main>
+    <a href="/proj1">go to proj1 </a>
+    <a href="/proj-child-webpack">go to accessreal</a>
+    <route default>
+
+      <application name="@single-spa/welcome"></application>
+    </route>
+    <route path="proj1">
+      <application name="@proj/child1"></application>
+    </route>
+    <route path="proj-child-webpack">
+      <application name="@proj/child-webpack"></application>
+    </route>
+
+  </main>
+</single-spa-router>
